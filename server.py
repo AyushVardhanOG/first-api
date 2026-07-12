@@ -11,8 +11,8 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_GET(self):
-        if self.path == "/hello":
-            self._send_json({"message": "Hello, endpoint"})
+        if self.path == "/status":
+            self._send_json({"message": "Hello, world!"})
         elif self.path == "/status":
             self._send_json({"status": "ok", "time": datetime.now(timezone.utc).isoformat()})
         else:
