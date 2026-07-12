@@ -6,7 +6,7 @@ with two JSON endpoints.
 ## Run it
 
 ```
-python3 server.py
+py server.py
 ```
 
 Server starts on http://localhost:8000
