@@ -12,7 +12,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if self.path == "/hello":
-            self._send_json({"message": "Hello, world!"})
+            self._send_json({"message": "Hello, endpoint"})
         elif self.path == "/status":
             self._send_json({"status": "ok", "time": datetime.now(timezone.utc).isoformat()})
         else:
